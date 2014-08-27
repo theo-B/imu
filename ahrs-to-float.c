@@ -39,7 +39,7 @@ int main()
             //printf("Full: %s\n",imu_input);
             //printf("Cut: %s\n",imu_input_cut);
             //printf("Yaw: %s    | Pit: %s    | Rol: %s    \n-----------------\n",imu_yaw_str, imu_pit_str, imu_rol_str);
-            printf("Yaw: %f    |    Pit: %f    |    Rol: %f\n",imu_yaw, imu_pit, imu_rol);
+            printf("Y: %f | P: %f | R: %f\n",imu_yaw, imu_pit, imu_rol);
 
             // Loop limiter
             /*
