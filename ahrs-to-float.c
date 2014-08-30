@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #define GET_EULER "minimu9-ahrs -b /dev/i2c-1 --output euler"
 
@@ -41,6 +42,8 @@ int main()
             //printf("Yaw: %s    | Pit: %s    | Rol: %s    \n-----------------\n",imu_yaw_str, imu_pit_str, imu_rol_str);
             printf("Y: %f | P: %f | R: %f\n",imu_yaw, imu_pit, imu_rol);
 
+            sleep(0.05);
+
             // Loop limiter
             /*
             i++;
@@ -50,7 +53,6 @@ int main()
             }
             */
     }
-    //printf("Done.\n");
     pclose(fp);
     return 0;
 }
